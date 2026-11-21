@@ -1,0 +1,210 @@
+/* =========================================================================
+   CSS Stylesheet - Springtime in Michigan (Homework 2 Style with Visible Skip Link)
+   ========================================================================= */
+
+/* --- ACCESSIBILITY: Skip-Link Styling (Permanently Visible Banner) --- */
+.skip-link,
+.skip-link:visited {
+  display: block;
+  /* Spans across the full width of the screen */
+  text-align: center;
+  /* Centers the text */
+  background-color: #1e3a8a;
+  /* Deep blue background */
+  color: #ffffff !important;
+  /* Pure white text for WCAG AAA compliance */
+  padding: 12px;
+  /* Padding to make it a clickable banner */
+  text-decoration: underline;
+  /* Standard underline for link accessibility */
+  font-weight: bold;
+  border-bottom: 3px solid #ffeb3b;
+  /* Bright yellow accent border */
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 1rem;
+}
+
+.skip-link:hover,
+.skip-link:focus {
+  background-color: #1d4ed8;
+  /* Lighter blue on hover */
+  color: #ffeb3b !important;
+  /* Turns text yellow on hover/focus */
+  outline: none;
+}
+
+/* --- 1. BODY STYLING --- */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+/* --- 2. HEADER STYLING --- */
+header {
+  background-color: #e2e8f0;
+  color: #0f172a;
+  padding: 25px;
+  text-align: center;
+}
+
+/* --- 3. NAV STYLING (Instruction 3: inline-block, width 80%) --- */
+nav {
+  background-color: #cbd5e1;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  display: inline-block;
+  width: 80%;
+}
+
+/* Navigation lists layout */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* --- 4. LI STYLING (Instruction 2: Commented out original li rules) --- */
+/*
+li {
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+}
+*/
+
+/* Navigation Links styling with AAA Contrast level colors */
+nav a,
+nav a:visited {
+  color: #1e3a8a;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #e2e8f0;
+  border-radius: 4px;
+  text-decoration: underline;
+}
+
+/* --- 5. DESCENDANT SELECTOR FOR NAV IMAGE (Instruction 4: width 10%) --- */
+nav img {
+  width: 10%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+/* --- 6. H1 STYLING --- */
+h1 {
+  text-align: center;
+  font-family: 'Georgia', Times, serif;
+  color: #1e3a8a;
+  margin-top: 15px;
+}
+
+/* --- 7. MAIN STYLING --- */
+main {
+  background-color: #ffffff;
+  font-size: 1.15rem;
+  padding: 30px;
+  max-width: 960px;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* --- 8. PARAGRAPH (p) STYLING --- */
+p {
+  line-height: 1.8;
+  color: #0f172a;
+}
+
+/* Inline Links Accessibility */
+main a,
+main a:visited {
+  color: #1d4ed8;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+main a:hover,
+main a:focus {
+  color: #1e3a8a;
+  text-decoration: none;
+}
+
+/* --- 9. GRID CLASS STYLING (Instructions 5 & 7: 2-column grid, approximately 40% each) --- */
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-around;
+  align-items: center;
+  row-gap: 25px;
+  margin: 20px 0;
+}
+
+/* --- 10. GRID IMAGE DESCENDANT SELECTOR (Instruction 6: 100% width) --- */
+.grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* --- 11. FLEX CLASS STYLING (Instruction 8: flex display, wrap, space-around) --- */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+/* Styles general images inside flexbox nicely */
+.flex img {
+  max-width: 150px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.flex img:hover {
+  transform: scale(1.05);
+}
+
+/* --- 12. FOOTER STYLING --- */
+footer {
+  background-color: #e2e8f0;
+  color: #0f172a;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+
+footer p {
+  color: #0f172a !important;
+}
+
+footer a,
+footer a:visited {
+  color: #1d4ed8;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+footer a:hover,
+footer a:focus {
+  color: #1e3a8a;
+}
